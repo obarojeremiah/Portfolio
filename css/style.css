@@ -1,0 +1,40 @@
+/*cascading is de volgorde van belang*/
+
+
+/*de elementen zullen primairen zelf als je iets hebt gezet in de stylesheet*/
+
+
+/*class meegeven om specifieke dingens te doen */
+
+
+/*maak gebruik van class en ID  */
+
+
+/*nav bar geel maken begin al met hoveren */
+
+body {
+    background-color: chocolate;
+}
+
+.nav_index {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 12%;
+    background-color: #f1f1f1;
+    height: 100%;
+    /* Full height */
+    position: fixed;
+    /* Make it stick, even on scroll */
+    overflow: auto;
+    /* Enable scrolling if the sidenav has too much content */
+}
+
+.text_basis {
+    position: fixed;
+    bottom: 5;
+ right: 0;
+    width: 600px;
+    border: 3px solid #73AD21;
+   
+}
