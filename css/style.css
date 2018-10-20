@@ -9,20 +9,32 @@
 
 /*maak gebruik van class en ID  */
 
-
-/*nav bar geel maken begin al met hoveren */
-
 body {
-    background-color: chocolate;
+    background-color: white;
 }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: "Roboto", sans-serif
+}
+header{
+    
+    text-align: center;
+}
+/*--------------------------------------------------------------Navigation bar ----------------------------------------------------------------------*/
 
 .nav_index {
     list-style-type: none;
-    margin: 0;
+    margin: 1%;
     padding: 0;
-    width: 12%;
-    background-color: #f1f1f1;
-    height: 100%;
+    width: 15%;
+    background-color: #ff4d4d;
+    height: 80%;
     /* Full height */
     position: fixed;
     /* Make it stick, even on scroll */
@@ -30,11 +42,107 @@ body {
     /* Enable scrolling if the sidenav has too much content */
 }
 
+li a {
+    display: block;
+    color: white;
+    padding: 10px 46px;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+li a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/*-------------------------------------------articel effect--------------------------------------*/
+
+
 .text_basis {
-    position: fixed;
+    padding: 20px;
+    margin: 20px;
+    margin-top: 10px;
+    margin-left: 25%;
+    /*position: fixed;
     bottom: 5;
- right: 0;
-    width: 600px;
-    border: 3px solid #73AD21;
-   
+ right: 0;*/
+    width: 850px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-----------------------------------------------------------skill bar ------------------------------------------------------------*/
+
+.skill_bar {
+  width: 100%;
+  background-color: #ffff;
+
+    border-radius: 20px;
+}
+
+.skills {
+  text-align: right;
+  padding: 10px;
+  color: white;
+    border-radius: 20px;
+}
+
+.html { height: 6px; width: 90%; background-color: #ff4d4d;}
+
+.css{
+    height: 6px; width: 78%; background-color: #ff4d4d;
+}
+.java{
+    height: 6px; width: 70%; background-color: #ff4d4d;
+}
+.networking{
+    height: 6px; width: 81%; background-color: #ff4d4d;
+}
+
+.linux{
+    height: 6px; width: 67%; background-color: #ff4d4d;
+}
+
+.frans{
+    height: 6px; width: 93%; background-color: #ff4d4d;
+}
+.nederlands{
+    height: 6px; width: 93%; background-color: #ff4d4d;
+}
+.engels{
+    height: 6px; width: 94%; background-color: #ff4d4d;
+}
+
+/*----------------------------------------------------------------showcase box ------------------------------------------------------------*/
+
+.showcase{
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 25%;
+    /*position: fixed;
+    bottom: 5;
+ right: 0;*/
+    width: 850px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+ 
+}
+
+/*---------------------------------------------------------------Introductie personalia -----------------------------------------------------*/
+.intro_titel{
+    text-align: center;
+}
+.intro_text{
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+/*-------------------------------------------------------------footer-------------------------------------------------------------------*/
+
+
+footer {
+    width: 500px;
+    margin-left: 500px;
+    margin-top: 48px;
+    background-color: #ff4d4d;
+    text-align: center;
 }
