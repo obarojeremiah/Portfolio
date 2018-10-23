@@ -1,11 +1,8 @@
 /*cascading is de volgorde van belang*/
 
-
 /*de elementen zullen primairen zelf als je iets hebt gezet in de stylesheet*/
 
-
 /*class meegeven om specifieke dingens te doen */
-
 
 /*maak gebruik van class en ID  */
 
@@ -19,13 +16,16 @@ h3,
 h4,
 h5,
 h6,
-p {
-    font-family: "Roboto", sans-serif
+p,
+a {
+    font-family: "Roboto", sans-serif;
 }
-header{
-    
+
+header {
     text-align: center;
 }
+
+
 /*--------------------------------------------------------------Navigation bar ----------------------------------------------------------------------*/
 
 .nav_index {
@@ -40,24 +40,32 @@ header{
     /* Make it stick, even on scroll */
     overflow: auto;
     /* Enable scrolling if the sidenav has too much content */
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: block;
+
+    -webkit-flex-flow: row wrap;
+    justify-content: flex-end;
 }
 
-li a {
+.nav_index li a {
     display: block;
     color: white;
     padding: 10px 46px;
     text-decoration: none;
     font-size: 25px;
+    /**-------------------heb ik erbij gezet want de navbar door flexbox deed moeilijk met de text----------------*/
 }
 
-li a:hover {
+.nav_index li a:hover {
     background-color: white;
     color: black;
 }
 
 
 /*-------------------------------------------articel effect--------------------------------------*/
-
 
 .text_basis {
     padding: 20px;
@@ -71,51 +79,74 @@ li a:hover {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
+
 /*-----------------------------------------------------------skill bar ------------------------------------------------------------*/
 
 .skill_bar {
-  width: 100%;
-  background-color: #ffff;
-
+    width: 100%;
+    background-color: #ffff;
     border-radius: 20px;
 }
 
 .skills {
-  text-align: right;
-  padding: 10px;
-  color: white;
+    text-align: right;
+    padding: 10px;
+    color: white;
     border-radius: 20px;
 }
 
-.html { height: 6px; width: 90%; background-color: #ff4d4d;}
-
-.css{
-    height: 6px; width: 78%; background-color: #ff4d4d;
-}
-.java{
-    height: 6px; width: 70%; background-color: #ff4d4d;
-}
-.networking{
-    height: 6px; width: 81%; background-color: #ff4d4d;
+.html {
+    height: 6px;
+    width: 90%;
+    background-color: #ff4d4d;
 }
 
-.linux{
-    height: 6px; width: 67%; background-color: #ff4d4d;
+.css {
+    height: 6px;
+    width: 78%;
+    background-color: #ff4d4d;
 }
 
-.frans{
-    height: 6px; width: 93%; background-color: #ff4d4d;
+.java {
+    height: 6px;
+    width: 70%;
+    background-color: #ff4d4d;
 }
-.nederlands{
-    height: 6px; width: 93%; background-color: #ff4d4d;
+
+.networking {
+    height: 6px;
+    width: 81%;
+    background-color: #ff4d4d;
 }
-.engels{
-    height: 6px; width: 94%; background-color: #ff4d4d;
+
+.linux {
+    height: 6px;
+    width: 67%;
+    background-color: #ff4d4d;
 }
+
+.frans {
+    height: 6px;
+    width: 93%;
+    background-color: #ff4d4d;
+}
+
+.nederlands {
+    height: 6px;
+    width: 93%;
+    background-color: #ff4d4d;
+}
+
+.engels {
+    height: 6px;
+    width: 94%;
+    background-color: #ff4d4d;
+}
+
 
 /*----------------------------------------------------------------showcase box ------------------------------------------------------------*/
 
-.showcase{
+.showcase {
     padding: 20px;
     margin-top: 10px;
     margin-left: 25%;
@@ -124,20 +155,25 @@ li a:hover {
  right: 0;*/
     width: 850px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
- 
 }
+
 
 /*---------------------------------------------------------------Introductie personalia -----------------------------------------------------*/
-.intro_titel{
+
+.intro_titel {
     text-align: center;
 }
-.intro_text{
+
+.intro_text {
     text-align: center;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    width: 50%;
+    margin-left: 25%;
+     margin-bottom: 8px;
 }
 
-/*-------------------------------------------------------------footer-------------------------------------------------------------------*/
 
+/*-------------------------------------------------------------footer-------------------------------------------------------------------*/
 
 footer {
     width: 500px;

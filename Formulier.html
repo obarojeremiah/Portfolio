@@ -7,56 +7,46 @@
     <meta name="description" content="voorstelling van larry jeremiah">
     <meta name="keywords" content="trefwoorden,">
     <meta name="viewport" content="width=device-width, height=device-height" />
-     <link rel="stylesheet" href="css/style.css" />
+    <link rel="icon" href="images/studentFavicon.jpg" type="image/gif" sizes="16x16">
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/Contact.css" />
     <title>Contact</title>
 </head>
 
 <body>
-    <h2>
-              Indien u met mij in contact wilt blijven vul dit formulier in en ik zal u terug antwoorden
-            </h2>
-    <form>
-        <fieldset>
-            <table>
-                <tr>
-                    <td>
-                        <label for="fname">First Name</label>
-                    </td>
-                    <td>
-                        <input type="text" id="fname" name="firstname" placeholder="Your name.."> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="lname">Last Name</label>
-                    </td>
-                    <td>
-                        <input type="text" id="lname" name="lastname" placeholder="Your last name.."> </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="subject">Subject</label>
-                    </td>
-                    <td>
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
-                    </td>
-                </tr>
-              
-                <tr>
-                    <td>
-                        <label for="email">E-mail</label>
-                    </td>
-                    <td>
-                        <input type="text" id="lemail" required name="email"> </td>
-                </tr>
-                  <tr>
-                    <td>
-                        <button type="submit" value="submit"> Vote </button>
-                    </td>
-                </tr>
-            </table>
-        </fieldset>
-    </form>
-    
+    <header>
+        <h1>Contact</h1>
+        <hr>
+        <!---zet hier voor andere talen ---->
+    </header>
+    <!----------------navigation bar------------------->
+    <nav>
+        <ul class="nav_index"> <img src="images/pic.jpg" alt="foto van larry jeremiah" width="100%" height="50%">
+            <li><a href="intro.html">Introductie</a> </li>
+            <li><a href="Projecten.html">Projecten</a></li>
+            <li><a href="Formulier.html">Contact</a> </li>
+        </ul>
+    </nav>
+    <!---------------------formulier ----------------------->
+    <section class="container">
+        <div class="row">
+            <div class="column">
+                <form>
+                    <label for="fname"> <a>Voornaam</a></label>
+                    <input type="text" id="fname" name="firstname" placeholder="Your name..">
+                    <label for="lname"> <a>Achternaam</a> </label>
+                    <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                    <label for="email"> <a>E-mail</a> </label>
+                    <input type="text" id="lemail" required name="email">
+                    <label for="subject"> <a>Onderwerp</a></label>
+                    <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    <input type="submit" value="Submit"> </form>
+            </div>
+        </div>
+    </section>
+
+    <footer> <a>©Larry Jeremiah </a>
+        <a href="https://www.linkedin.com/in/larry-jeremiah-99376b132/ " target="_blank"> <img src="images/linkenIn.png" width="20px">  </a> <a href="https://github.com/obarojeremiah"><img src="images/github.png" width="20px"> </a> </footer>
 </body>
 
 </html>
