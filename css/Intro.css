@@ -1,70 +1,70 @@
-    /* hier zal ik de flexbox toepassen en dergelijke */
-
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    a {
-        font-family: "Roboto", sans-serif;
-    }
-
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        padding: 0 4px;
-    }
-
-
-    /* Create four equal columns that sits next to each other */
-
-    .column {
-
-        padding: 0 50px;
-
-    }
-
-    .column img {
-        width: 200px;
-        margin-top: 8px;
-        vertical-align: middle;
-        margin-bottom: 8px;
-    }
-
-    .img_hobbies img {
-        width: 120px;
-        height: 120px;
-        margin-top: 8px;
-        margin-bottom: 8px;
-    }
-
-    .softskills_list li {
-        text-decoration: none;
-        list-style-type: none;
-       text-align: center;
-
-    }
-
-    /*-----------------------------------------maak de @media thuis maakhet compatibel met gsm -------------------------------------------------------------------*/
-
-    /*---------------------------------------@media zal ook van toepassing nodig zijn ---------------------------------------*/
-
-    /* Responsive layout - makes a two column-layout instead of four columns */
-
-    @media (max-width: 700px) {
-        .column {
-            flex: 50%;
-            max-width: 50%;
-        }
-    }
-
-
-    /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-
-    @media (max-width: 600px) {
-        .column {
-            flex: 100%;
-            max-width: 100%;
-        }
+                /* hier zal ik de flexbox toepassen en dergelijke */
+            
+            h1,
+            h2,
+            h3,
+            h4,
+            h5,
+            h6,
+            p,
+            a {
+                font-family: "Roboto", sans-serif;
+            }
+            
+            .row {
+                display: flex;
+                flex-wrap: wrap;
+                padding: 0 4px;
+            }
+            /*-------------------------------------Create four equal columns that sits next to each other-------------------------------------------*/
+            
+            .column {
+                padding: 0 50px;
+            }
+            
+            .column img {
+                width: 200px;
+                margin-top: 8px;
+                vertical-align: middle;
+                margin-bottom: 8px;
+            }
+            
+            .img_hobbies img {
+                width: 120px;
+                height: 120px;
+                margin-top: 8px;
+                margin-bottom: 8px;
+            }
+            
+            .softskills_list li {
+                text-decoration: none;
+                list-style-type: none;
+                text-align: center;
+            }
+            /*------------------------------------------------------------tabel-----------------------------------------------------------------*/
+            
+            .table_education {
+                margin-left: 50px;
+            }
+            
+            table {
+                font-family: arial, sans-serif;
+                border-collapse: collapse;
+                width: 100%;
+                display: flex;
+            }
+            
+            td,
+            th {
+                border: 1px solid #dddddd;
+                text-align: left;
+                padding: 8px;
+            }
+            
+            tr:nth-child(even) {
+                background-color: #dddddd;
+            }
+            /*------------------------------------------------------------------photo gallery--------------------------------------------------------------------*/
+            /*-----------------------------------------maak de @media thuis maakhet compatibel met gsm -------------------------------------------------------------------*/
+            /*-----------------------------------------@media zal ook van toepassing nodig zijn -----------------------------------------------------------------*/
+          
