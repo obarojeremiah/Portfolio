@@ -14,12 +14,14 @@
     <title>Contact</title>
 </head>
 
-<body>
+<body onload="myFunction()" style="margin:0;">
     <header>
         <h1>Contact</h1>
         <hr>
         <!---zet hier voor andere talen ---->
     </header>
+        <div id="loader"></div>
+    <section  id="myDiv" class="animate-bottom"> 
       <!------------------------navigation bar------------------->
         <nav>
             <ul class="nav_index"> <article>  <a href="Index.html"><img src="images/pic.jpg" class="bounce" alt="foto van larry jeremiah" width="100%" height="50%"></a></article>
@@ -49,6 +51,19 @@
 
     <footer> <a>©Larry Jeremiah </a>
         <a href="https://www.linkedin.com/in/larry-jeremiah-99376b132/ " target="_blank"> <img src="images/linkenIn.png" width="20px">  </a> <a href="https://github.com/obarojeremiah"><img src="images/github.png" width="20px"> </a> </footer>
+    </section>
+        <script>
+        var myVar;
+
+        function myFunction() {
+            myVar = setTimeout(showPage, 2500);
+        }
+
+        function showPage() {
+            document.getElementById("loader").style.display = "none";
+            document.getElementById("myDiv").style.display = "block";
+        }
+    </script>
 </body>
 
 </html>
