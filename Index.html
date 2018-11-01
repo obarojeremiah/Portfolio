@@ -10,79 +10,67 @@
     <link rel="icon" href="images/studentFavicon.jpg" type="image/gif" sizes="16x16">
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/pageStyle.css" />
+    <script src="javascript/page.js"></script>
     <title>Portfolio Larry Jeremiah</title>
 </head>
 
 <body onload="myFunction()" style="margin:0;">
-
     <header>
         <h1>Larry Jeremiah</h1>
         <hr>
         <!---zet hier voor andere talen ---->
     </header>
-       <!------------------loaderof page ------------------->
+    <!------------------loader of page ------------------->
     <div id="loader"></div>
-    <section  id="myDiv" class="animate-bottom"> 
-    <section> 
-        <!------------------------navigation bar------------------->
-        <nav>
-            <ul class="nav_index">
-                <article class="grow">
-                    <a href="Index.html"><img src="images/pic.jpg" class="bounce" alt="foto van larry jeremiah" width="100%" height="50%"></a>
-                </article>
-                <li><a href="Index.html">Home</a> </li>
-                <li><a href="intro.html">Introductie</a> </li>
-                <li><a href="Projecten.html">Projecten</a></li>
-                <li><a href="Formulier.html">Contact</a> </li>
-            </ul>
-        </nav>
-        <article class="text_basis">
-            <h1>Welkom!</h1>
-            <p>Ik ben Larry Jeremiah, ik studeer informatica op odisee/cvo lethas. om meer te komen weten van mezelf zou ik u aanraden om de lijst eens overgaan en beslissen wat u graag zou willen weten over mezelf. Mijn doel is één van de beste IT'er te worden</p>
-            <p> dit kan ik enkel doen door te oefenen, oefenen en oefenen. Aangezien oefenen baart kunst. Raadpleeg de navigatiebar om meer te weten over mij. </p>
-        </article>
-        <article class="showcase">
-            <!--------showcase tonen wat ik allemaal doe dus --------->
-            <h1>Vaardigheden</h1>
-            <div class="skill_bar">
-                <p>HTML</p>
-                <div class="skills html">90%</div>
-                <p>CSS</p>
-                <div class="skills css">78%</div>
-                <p>Java</p>
-                <div class="skills java">70%</div>
-                <p>Networking</p>
-                <div class="skills networking">81%</div>
-                <p>Linux</p>
-                <div class="skills linux">67%</div>
-                <h1>Talen </h1>
-                <p>Frans</p>
-                <div class="skills frans">93%</div>
-                <p>Nederlands</p>
-                <div class="skills nederlands">93%</div>
-                <p>Engels</p>
-                <div class="skills engels">94%</div>
-            </div>
-        </article>
-        <!----------------footer----------------->
-        <footer> <a>©Larry Jeremiah </a>
-            <a href="https://www.linkedin.com/in/larry-jeremiah-99376b132/ " target="_blank"> <img src="images/linkenIn.png" width="20px"> </a>
-            <a href="https://github.com/obarojeremiah"><img src="images/github.png" width="20px"> </a>
-        </footer>
+    <section id="myDiv" class="animate-bottom">
+        <section>
+            <!------------------------navigation bar------------------->
+            <nav>
+                <ul class="nav_index">
+                    <article class="grow">
+                        <a href="Index.html"><img src="images/pic.jpg" class="bounce" alt="foto van larry jeremiah" width="100%" height="50%"></a>
+                    </article>
+                    <li><a href="Index.html">Home</a> </li>
+                    <li><a href="intro.html">Introductie</a> </li>
+                    <li><a href="Projecten.html">Projecten</a></li>
+                    <li><a href="Formulier.html">Contact</a> </li>
+                </ul>
+            </nav>
+            <article class="text_basis">
+                <h1>Welkom!</h1>
+                <p>Ik ben Larry Jeremiah, ik studeer informatica op odisee/cvo lethas. om meer te komen weten van mezelf zou ik u aanraden om de lijst eens overgaan en beslissen wat u graag zou willen weten over mezelf. Mijn doel is één van de beste IT'er te worden</p>
+                <p> dit kan ik enkel doen door te oefenen, oefenen en oefenen. Aangezien oefenen baart kunst. Raadpleeg de navigatiebar om meer te weten over mij. </p>
+            </article>
+            <article class="showcase">
+                <!--------showcase tonen wat ik allemaal doe dus --------->
+                <h1>Vaardigheden</h1>
+                <div class="skill_bar">
+                    <p>HTML</p>
+                    <div class="skills html">90%</div>
+                    <p>CSS</p>
+                    <div class="skills css">78%</div>
+                    <p>Java</p>
+                    <div class="skills java">70%</div>
+                    <p>Networking</p>
+                    <div class="skills networking">81%</div>
+                    <p>Linux</p>
+                    <div class="skills linux">67%</div>
+                    <h1>Talen </h1>
+                    <p>Frans</p>
+                    <div class="skills frans">93%</div>
+                    <p>Nederlands</p>
+                    <div class="skills nederlands">93%</div>
+                    <p>Engels</p>
+                    <div class="skills engels">94%</div>
+                </div>
+            </article>
+            <!----------------footer----------------->
+            <footer> <a>©Larry Jeremiah </a>
+                <a href="https://www.linkedin.com/in/larry-jeremiah-99376b132/ " target="_blank"> <img src="images/linkenIn.png" width="20px"> </a>
+                <a href="https://github.com/obarojeremiah"><img src="images/github.png" width="20px"> </a>
+            </footer>
+        </section>
     </section>
-   </section>
-    <script>
-        var myVar;
-
-        function myFunction() {
-            myVar = setTimeout(showPage, 2500);
-        }
-
-        function showPage() {
-            document.getElementById("loader").style.display = "none";
-            document.getElementById("myDiv").style.display = "block";
-        }
-    </script>
 </body>
 
 </html>
