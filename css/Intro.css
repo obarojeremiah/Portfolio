@@ -40,11 +40,12 @@
                 text-decoration: none;
                 list-style-type: none;
                 text-align: center;
+          margin-right: 5%;
             }
             /*------------------------------------------------------------tabel-----------------------------------------------------------------*/
             
             .table_education {
-                margin-left: 50px;
+                margin-left: 30%;
             }
             
             table {
